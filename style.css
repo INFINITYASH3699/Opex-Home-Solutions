@@ -2,13 +2,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 body.dark-mode {
-  background-color: rgb(60, 60, 60);
+  background-color: #0A0C10;
   color: white;
   .logo a {
     color: white;
   }
   .nav-tabs {
-    background-color: black;
+    background-color: #010409;
   }
   .nav-link {
     color: white;
@@ -18,7 +18,7 @@ body.dark-mode {
     color: white;
   }
   footer section {
-    background-color: black;
+    background-color: #010409;
     color: white;
   }
 }
