@@ -1,12 +1,24 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
 body.dark-mode {
   background-color: rgb(60, 60, 60);
   color: white;
-
+  .logo a {
+    color: white;
+  }
   .nav-tabs {
     background-color: black;
   }
+  .nav-link {
+    color: white;
+  }
 
   .nav a {
+    color: white;
+  }
+  footer section {
+    background-color: black;
     color: white;
   }
 }
@@ -62,6 +74,23 @@ body.dark-mode {
 .toggle-switch input[type="checkbox"]:checked + label .moon {
   opacity: 1;
 }
+.nav-tabs{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo a {
+  color: black;
+  text-decoration: none;
+}
 
+footer,
+section {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer,
+section a{
+  text-decoration: none;
+}
 
-  
+main {
+  min-height: 80vh;
+}
