@@ -94,3 +94,10 @@ section a{
 main {
   min-height: 80vh;
 }
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform 0.5s;
+}
