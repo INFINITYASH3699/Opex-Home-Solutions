@@ -18,11 +18,15 @@
       referrerpolicy="no-referrer"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       body {
         font-family: "Poppins", sans-serif;
       }
       body.dark-mode {
-        background-color: #0A0C10;
+        background-color: #0a0c10;
         color: white;
         .logo a {
           color: white;
@@ -111,6 +115,24 @@
       main {
         min-height: 80vh;
       }
+
+      .about-section {
+        background-image: linear-gradient(#ffde59, #ff914d);
+      }
+      .img-fluid {
+        width: 370px;
+      }
+      
+      .mission {
+        background-image: linear-gradient(#cdffd8, #94b9ff);
+    
+      }
+      
+      .our-story{
+        background-image: linear-gradient(#8c52ff,#1bdaff);
+
+      }
+     
     </style>
   </head>
   <body>
@@ -124,22 +146,34 @@
         <div class="col-7 navlinks">
           <ul class="nav justify-content-center gap-5">
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" aria-current="page" href="./home.html"
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" aria-current="page" href="./services.html"
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./services.html"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" aria-current="page" href="./about.html"
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./about.html"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" aria-current="page" href="./contact.html"
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./contact.html"
                 >Contact</a
               >
             </li>
@@ -155,10 +189,103 @@
           </div>
         </div>
       </div>
-      </navbar>
-        
+    </navbar>
 
-    <main class="col-12 container"></main>
+    <main class="col-sm-12 col-md-12 col-lg-12 col-xl-12 container">
+      <div class="row g-0 gx-4 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div
+          class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-4 p-0 border border-dark rounded about-section"
+        >
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 img-section">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCzn1wdDTcvJCksYW05jQn6FSjX3PGBTlBQ&s"
+              class="img-fluid img-thumbnail rounded"
+              alt="noimg"
+            />
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-3">
+            <h1>ABOUT US</h1>
+            <p>
+              The ”Smart Home Solutions” project aims to revolutionize the home
+              design and construction process by providing a comprehensive,
+              user-friendly platform that integrates design, customization, and
+              execution. In today's rapidly evolving world, homeowners and
+              prospective buyers are seeking more efficient and transparent ways
+              to build and customize their dream homes.
+            </p>
+            <p>
+              This project addresses these needs by offering a robust solution
+              that showcases a wide range of home designs, complete with
+              detailed information on interiors, pricing, materials, and
+              professional contacts.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 border border-dark rounded"
+          >
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+              <img
+                src="https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004032.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721088000&semt=ais_user"
+                class="img-fluid img-thumbnail rounded"
+                alt="noimg"
+              />
+            </div>
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-5 p-3 mission "
+            >
+              <h1>OUR MISSION</h1>
+              <p>
+                our mission is to revolutionize the home design and construction
+                industry through innovative AI-driven solutions. We strive to
+                empower homeowners by providing them with a comprehensive
+                platform that seamlessly integrates personalized home design,
+                accurate price predictions, and reliable contractor connections.
+              </p>
+              <p>
+                Our goal is to simplify the process of creating dream homes,
+                making it accessible, efficient, and enjoyable for everyone.
+                Through cutting-edge technology and a customer-centric approach,
+                we aim to set new standards in the industry, delivering
+                exceptional value and satisfaction to our clients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 border border-dark rounded"
+          >
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 story">
+              <img
+                src="https://img.freepik.com/premium-photo/business-people-having-meeting-office_236854-36082.jpg"
+                alt="no-img"
+                class="img-fluid img-thumbnail"
+              />
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 p-2 story our-story">
+              <h1>OUR STORY</h1>
+              <p>
+                We are final-year students at GH Raisoni University, pursuing
+                Computer Engineering. Our journey began with a vision to
+                transform the home design and construction industry using AI.
+                Noticing a gap for comprehensive solutions, we developed "Smart
+                Home Solution" with guidance from Prof. Girish Awadhwal.
+              </p>
+              <p>
+                As our project progressed, its potential to simplify home
+                building and renovation became clear. This motivated us to
+                transform our project into a startup, providing a real solution.
+                We are excited to help homeowners create their dream spaces and
+                are dedicated to expanding our platform to make a significant
+                industry impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="text-center text-lg-start bg-body-tertiary mt-4">
       <section
