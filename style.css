@@ -4,7 +4,7 @@ body {
 body.dark-mode {
   background-color: #0A0C10;
   color: white;
-  .logo a {
+  .logo img {
     color: white;
   }
   .nav-tabs {
@@ -77,9 +77,8 @@ body.dark-mode {
 .nav-tabs{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.logo a {
-  color: black;
-  text-decoration: none;
+.logo img {
+  width: 10vw;
 }
 
 footer,

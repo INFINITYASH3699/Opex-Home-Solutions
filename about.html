@@ -115,33 +115,36 @@
       main {
         min-height: 80vh;
       }
-
+      .logo img {
+        width: 10vw;
+      }
+      .card-img img {
+        width: 30rem;
+        height: 15em;
+      }
+      .about-cont {
+        height: 32rem;
+      }
       .about-section {
         background-image: linear-gradient(#ffde59, #ff914d);
       }
-      .img-fluid {
-        width: 370px;
-      }
-      
+
       .mission {
         background-image: linear-gradient(#cdffd8, #94b9ff);
-    
       }
-      
-      .our-story{
-        background-image: linear-gradient(#8c52ff,#1bdaff);
 
+      .our-story {
+        background-image: linear-gradient(#8c52ff, #1bdaff);
       }
-     
     </style>
   </head>
   <body>
     <navbar class="col-12 nav-bar">
       <div class="row gx-0 nav-tabs pt-4 pb-2">
-        <div class="col-3 ps-4 logo">
-          <a class="text-center fw-bold fs-4" aria-current="page" href="#"
-            >Smart Home Solutions</a
-          >
+        <div class="col-3 ps-4">
+          <a class="text-center logo fw-bold fs-4" aria-current="page" href="#"
+            ><img src="./Media/logo.png" class="img-fluid" alt=""
+          /></a>
         </div>
         <div class="col-7 navlinks">
           <ul class="nav justify-content-center gap-5">
@@ -196,15 +199,17 @@
         <div
           class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-4 p-0 border border-dark rounded about-section"
         >
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 img-section">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 card-img">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCzn1wdDTcvJCksYW05jQn6FSjX3PGBTlBQ&s"
-              class="img-fluid img-thumbnail rounded"
+              class="img-fluid rounded"
               alt="noimg"
             />
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-3">
-            <h1>ABOUT US</h1>
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-3 about-cont"
+          >
+            <h1 class="text-center">ABOUT US</h1>
             <p>
               The ”Smart Home Solutions” project aims to revolutionize the home
               design and construction process by providing a comprehensive,
@@ -223,19 +228,19 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div
-            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 border border-dark rounded"
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 mission border border-dark rounded"
           >
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 card-img">
               <img
                 src="https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004032.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721088000&semt=ais_user"
-                class="img-fluid img-thumbnail rounded"
+                class="img-fluid rounded"
                 alt="noimg"
               />
             </div>
             <div
-              class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-5 p-3 mission "
+              class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-3 about-cont"
             >
-              <h1>OUR MISSION</h1>
+              <h1 class="text-center">OUR MISSION</h1>
               <p>
                 our mission is to revolutionize the home design and construction
                 industry through innovative AI-driven solutions. We strive to
@@ -255,17 +260,19 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div
-            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 border border-dark rounded"
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 p-0 our-story border border-dark rounded"
           >
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 story">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 card-img">
               <img
                 src="https://img.freepik.com/premium-photo/business-people-having-meeting-office_236854-36082.jpg"
                 alt="no-img"
-                class="img-fluid img-thumbnail"
+                class="img-fluid rounded"
               />
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-3 p-2 story our-story">
-              <h1>OUR STORY</h1>
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pt-4 p-3 about-cont"
+            >
+              <h1 class="text-center">OUR STORY</h1>
               <p>
                 We are final-year students at GH Raisoni University, pursuing
                 Computer Engineering. Our journey began with a vision to
