@@ -1,88 +1,80 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 body.dark-mode {
   background-color: #0a0c10;
   color: white;
-  .logo img {
-    color: white;
-  }
-  .nav-tabs {
-    background-color: #010409;
-  }
-  .nav-link {
-    color: white;
-  }
-  .nav a {
-    color: white;
-  }
-  .fa-search{
-    color: black;
-  }
-  #button-addon{
-    background-color: white;
-  }
-  .find-btn {
-    color: white;
-    border: 1px solid white;
-  }
-  footer section {
-    background-color: #010409;
-    color: white;
-  }
+}
+body.dark-mode .logo a {
+  color: white;
+}
+body.dark-mode .nav-tabs {
+  background-color: #010409;
+}
+body.dark-mode .nav-link {
+  color: white;
+}
+body.dark-mode .nav a {
+  color: white;
+}
+body.dark-mode .fa-search {
+  color: black;
+}
+body.dark-mode #button-addon {
+  background-color: white;
+}
+body.dark-mode .find-btn {
+  color: white;
+  border: 1px solid white;
+}
+body.dark-mode footer section {
+  background-color: #010409;
+  color: white;
 }
 
 .toggle-switch {
   top: 20px;
   right: 20px;
-}
-
-.toggle-switch input[type="checkbox"] {
-  display: none;
-}
-
-.toggle-switch label {
-  display: block;
-  width: 50px;
-  height: 25px;
-  background-color: gray;
-  border-radius: 25px;
-  position: relative;
   cursor: pointer;
-}
-
-.toggle-switch label .icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
-.toggle-switch label .sun {
-  left: 5px;
-  color: #f7df06;
-  opacity: 1;
+.toggle-switch .icon {
+  font-size: 20px;
   transition: opacity 0.3s;
 }
 
-.toggle-switch label .moon {
-  right: 5px;
-  color: #ffff;
+.toggle-switch .sun {
+  position: relative;
+  color: #f7b306;
+  padding: 2px 6px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  left: 2rem;
   opacity: 0;
-  transition: opacity 0.3s;
 }
 
-.toggle-switch input[type="checkbox"]:checked + label .sun {
-  opacity: 0;
+.toggle-switch .moon {
+  position: relative;
+  color: black;
+  padding: 1px 8px;
+  border: 1.5px solid black;
+  border-radius: 50%;
 }
 
-.toggle-switch input[type="checkbox"]:checked + label .moon {
+body.dark-mode .toggle-switch .sun {
   opacity: 1;
 }
+
+body.dark-mode .toggle-switch .moon {
+  opacity: 0;
+}
+
 .nav-tabs {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
