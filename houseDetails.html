@@ -166,7 +166,17 @@
       </div>
     </navbar>
 
-    <main class="col-12 container"></main>
+    <main class="col-12 container mt-5">
+        <div class="row">
+          <div class="col-6">
+            <img id="house-img" class="img-fluid" alt="House Image" />
+          </div>
+          <div class="col-6">
+            <h1 class="mb-4" id="house-name"></h1>
+            <p id="house-desp"></p>
+          </div>
+        </div>
+    </main>
 
     <footer class="text-center text-lg-start bg-body-tertiary mt-4">
       <section
@@ -186,6 +196,7 @@
           <a href="" class="me-4 text-reset"><i class="fab fa-youtube"></i></a>
         </div>
       </section>
+
       <section class="border-bottom">
         <div class="container text-center text-md-start pt-5">
           <div class="row mt-3">
@@ -256,31 +267,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleSwitch = document.querySelector(".toggle-switch");
-
-        function applyDarkModePreference() {
-          if (localStorage.getItem("darkMode") === "enabled") {
-            document.body.classList.add("dark-mode");
-          } else {
-            document.body.classList.remove("dark-mode");
-          }
-        }
-
-        function toggleDarkMode() {
-          if (document.body.classList.contains("dark-mode")) {
-            document.body.classList.remove("dark-mode");
-            localStorage.setItem("darkMode", "disabled");
-          } else {
-            document.body.classList.add("dark-mode");
-            localStorage.setItem("darkMode", "enabled");
-          }
-        }
-
-        toggleSwitch.addEventListener("click", toggleDarkMode);
-        applyDarkModePreference();
-      });
-    </script>
+    <script src="houses.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
