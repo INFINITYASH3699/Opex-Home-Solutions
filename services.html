@@ -113,38 +113,18 @@
       .logo img {
         width: 10vw;
       }
-      .service-box {
-        background-color: #1b293e;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
+      .card {
+        height: 24rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
       }
-      .service-box h3 {
-        margin-bottom: 15px;
+      .card:hover {
+        transform: scale(1.02);
       }
-      .service-box p {
-        font-size: 14px;
-      }
-      .icon {
-        font-size: 40px;
-        margin-bottom: 15px;
-      }
-
-      p{
-        font-size: 1rem;
-      }
-      
       .card img {
-            height: 200px;
-            object-fit: cover; /* Ensures images are properly fitted */
-        }
-        
-        h5{
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-
+        height: 200px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -207,49 +187,100 @@
     </navbar>
 
     <main class="col-12 container">
-      <h1 class="text-center">Our Services</h1>
-      <div class="row gx-5">
-        <div class="col-md-3 card">
-          <img src="https://i.homeadore.com/wp-content/uploads/2021/07/001-split-house-kovac-design-studio-1050x702.jpg" class="card-img-top" alt="home design" />
-          <div class="card-body">
-            <h5>Home Designs</h5>
-            <p class="card-text">
-              Discover diverse home designs tailored to various styles and
-              budgets on our Smart Home Solutions platform. Customize layouts
-              and materials, and get detailed plans with cost estimates. Connect
-              with experienced architects and builders to bring your dream home
-              to life.
-            </p>
+      <h1 class="text-center mt-5 mb-4">Our Services</h1>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card border border-dark">
+            <a
+              href="index.html"
+              class="text-reset text-decoration-none"
+              target="_blank"
+            >
+              <img
+                src="https://i.homeadore.com/wp-content/uploads/2021/07/001-split-house-kovac-design-studio-1050x702.jpg"
+                class="card-img-top border-bottom border-dark"
+                alt="home design"
+              />
+              <div class="card-body">
+                <h5>Home Designs</h5>
+                <p class="card-text">
+                  Discover diverse home designs tailored to various styles and
+                  budgets. Customize layouts and get detailed plans with cost
+                  estimates.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 
-        <div class="col-md-3 card">
-          <img src="https://d5t3j6u2.rocketcdn.me/wp-content/uploads/2024/05/What-Is-a-Modern-Home-Interior-Design-Idea.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5>Interior Designs</h5>
-            <p class="card-text">
-              Our Smart Home Solutions project offers a range of interior design options, allowing users to personalize their spaces with customizable furniture layouts and decor styles. Choose from modern, traditional, or minimalist themes to match your taste.
-            </p>
+        <div class="col-md-3">
+          <div class="card border border-dark">
+            <a
+              href="interior.html"
+              class="text-reset text-decoration-none"
+              target="_blank"
+            >
+              <img
+                src="https://d5t3j6u2.rocketcdn.me/wp-content/uploads/2024/05/What-Is-a-Modern-Home-Interior-Design-Idea.jpg"
+                class="card-img-top border-bottom border-dark"
+                alt="interior design"
+              />
+              <div class="card-body">
+                <h5>Interior Designs</h5>
+                <p class="card-text">
+                  Personalize your spaces with customizable furniture layouts
+                  and decor styles. Choose from modern, traditional, or
+                  minimalist themes.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 
-        <div class="col-md-3 card">
-          <img src="https://www.jkcement.com/wp-content/uploads/2023/08/show-flat-scaled.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5>Home Plans</h5>
-            <p class="card-text">
-              Our Smart Home Solutions project features comprehensive home plans that include detailed floor layouts, area specifications, and estimated construction costs. These plans cater to various architectural styles and budgets, providing a transparent and flexible foundation for your dream home.
-            </p>
+        <div class="col-md-3">
+          <div class="card border border-dark">
+            <a
+              href="architectPlan.html"
+              class="text-reset text-decoration-none"
+              target="_blank"
+            >
+              <img
+                src="https://www.jkcement.com/wp-content/uploads/2023/08/show-flat-scaled.jpg"
+                class="card-img-top border-bottom border-dark"
+                alt="home plans"
+              />
+              <div class="card-body">
+                <h5>Home Plans</h5>
+                <p class="card-text">
+                  Comprehensive home plans with detailed floor layouts, area
+                  specifications, and estimated construction costs for various
+                  styles.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 
-        <div class="col-md-3 card">
-          <img src="https://pbs.twimg.com/media/FoCcsWaagAEeMXd.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5>Home Architecture</h5>
-            <p class="card-text">
-              Explore a diverse range of architectural styles with our Smart Home Solutions project, offering modern, traditional, and eco-friendly designs. Each style is thoughtfully crafted to meet various aesthetic and functional needs. Our platform provides detailed insights into the architectural features, helping you choose the perfect design for your dream home.
-            </p>
+        <div class="col-md-3">
+          <div class="card border border-dark">
+            <a
+              href="architectPlan.html"
+              class="text-reset text-decoration-none"
+              target="_blank"
+            >
+              <img
+                src="https://pbs.twimg.com/media/FoCcsWaagAEeMXd.jpg"
+                class="card-img-top border-bottom border-dark"
+                alt="home architecture"
+              />
+              <div class="card-body">
+                <h5>Home Architecture</h5>
+                <p class="card-text">
+                  Explore a range of architectural styles including modern,
+                  traditional, and eco-friendly designs with detailed insights.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

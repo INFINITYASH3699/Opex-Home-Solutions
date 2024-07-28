@@ -99,11 +99,11 @@ main {
 }
 
 .card {
-  transition: transform 0.6s;
+  transition: transform 0.3s;
   cursor: pointer;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .card img{

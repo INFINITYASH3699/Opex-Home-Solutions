@@ -45,7 +45,7 @@ function displayHouses() {
                 <button class="btn btn-outline-dark" onclick="houseInfo(${index});">Visit</button>
               </div>
             </div>
-          </div>
+      </div>
     `;
     houseList.innerHTML += houseCard;
   });
@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("house-img").alt = house.name;
     document.getElementById("house-desp").textContent = house.desp;
     document.getElementById("house-price").textContent = house.price;
-    document.getElementById("house-space").textContent = house.space;
-    document.getElementById("house-matr").textContent = house.matr;
-    document.getElementById("house-con").textContent = house.con;
-
-
+    document.getElementById("house-area").textContent = house.area;
+    document.getElementById("house-material").textContent = house.material;
+    document.getElementById("house-landOptions").textContent = house.landOptions;
+    document.getElementById("house-contractor-name").textContent = house.contractor.name;
+    document.getElementById("house-contractor-contact").textContent = house.contractor.contact;
   } else {
     document.getElementById("house-name").textContent = "House not found";
   }

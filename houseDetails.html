@@ -1,253 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Home Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Home Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-    }
+      body.dark-mode {
+        background-color: #0a0c10;
+        color: white;
+      }
+      body.dark-mode .logo a {
+        color: white;
+      }
+      body.dark-mode .nav-tabs {
+        background-color: #010409;
+      }
+      body.dark-mode .nav-link {
+        color: white;
+      }
+      body.dark-mode .nav a {
+        color: white;
+      }
+      body.dark-mode .btn-outline-dark {
+        color: white;
+        border: 1px solid white;
+      }
+      body.dark-mode footer section {
+        background-color: #010409;
+        color: white;
+      }
 
-    body.dark-mode {
-      background-color: #0a0c10;
-      color: white;
-    }
+      .toggle-switch {
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+      }
 
-    body.dark-mode .logo a {
-      color: white;
-    }
+      .toggle-switch .icon {
+        font-size: 20px;
+        transition: opacity 0.3s;
+      }
 
-    body.dark-mode .nav-tabs {
-      background-color: #010409;
-    }
+      .toggle-switch .sun {
+        position: relative;
+        color: #f7b306;
+        padding: 2px 6px;
+        border: 1.5px solid white;
+        border-radius: 50%;
+        left: 2rem;
+        opacity: 0;
+      }
 
-    body.dark-mode .nav-link {
-      color: white;
-    }
+      .toggle-switch .moon {
+        position: relative;
+        color: black;
+        padding: 1px 8px;
+        border: 1.5px solid black;
+        border-radius: 50%;
+      }
 
-    body.dark-mode .nav a {
-      color: white;
-    }
+      body.dark-mode .toggle-switch .sun {
+        opacity: 1;
+      }
 
-    body.dark-mode footer section {
-      background-color: #010409;
-      color: white;
-    }
+      body.dark-mode .toggle-switch .moon {
+        opacity: 0;
+      }
 
-    .toggle-switch {
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-    }
-
-    .toggle-switch .icon {
-      font-size: 20px;
-      transition: opacity 0.3s;
-    }
-
-    .toggle-switch .sun {
-      position: relative;
-      color: #f7b306;
-      padding: 2px 6px;
-      border: 1.5px solid white;
-      border-radius: 50%;
-      left: 2rem;
-      opacity: 0;
-    }
-
-    .toggle-switch .moon {
-      position: relative;
-      color: black;
-      padding: 1px 8px;
-      border: 1.5px solid black;
-      border-radius: 50%;
-    }
-
-    body.dark-mode .toggle-switch .sun {
-      opacity: 1;
-    }
-
-    body.dark-mode .toggle-switch .moon {
-      opacity: 0;
-    }
-
-    .nav-tabs {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .nav-link {
-      color: black;
-    }
-
-    footer,
-    section {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    footer,
-    section a {
-      text-decoration: none;
-    }
-
-    main {
-      min-height: 80vh;
-    }
-
-    .logo img {
-      width: 10vw;
-    }
-  </style>
-</head>
-
-<body>
-  <navbar class="col-12 nav-bar">
-    <div class="row gx-0 nav-tabs pt-4 pb-2">
-      <div class="col-3 ps-4">
-        <a class="text-center logo fw-bold fs-4" aria-current="page" href="home.html">
-          <img src="./Media/logo.png" class="img-fluid" alt="" />
-        </a>
-      </div>
-      <div class="col-7 navlinks">
-        <ul class="nav justify-content-center gap-5">
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-5" aria-current="page" href="./home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-5" aria-current="page" href="./services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-5" aria-current="page" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold fs-5" aria-current="page" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-2 mode d-flex justify-content-end align-self-center pe-5">
-        <div class="toggle-switch">
-          <span class="icon sun"><i class="fas fa-sun"></i></span>
-          <span class="icon moon"><i class="fas fa-moon"></i></span>
+      .nav-tabs {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .logo a {
+        color: black;
+        text-decoration: none;
+      }
+      .nav-link {
+        color: black;
+      }
+      footer,
+      section {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer,
+      section a {
+        text-decoration: none;
+      }
+      main {
+        min-height: 80vh;
+      }
+      .logo img {
+        width: 10vw;
+      }
+      #house-img {
+        width: 50rem;
+      }
+      .sticky-img {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <navbar class="col-12 nav-bar">
+      <div class="row gx-0 nav-tabs pt-4 pb-2">
+        <div class="col-3 ps-4">
+          <a
+            class="text-center logo fw-bold fs-4"
+            aria-current="page"
+            href="home.html"
+          >
+            <img src="./Media/logo.png" class="img-fluid" alt="" />
+          </a>
         </div>
-      </div>
-    </div>
-  </navbar>
-
-  <main class="col-12 container mt-5">
-    <div class="row">
-      <div class="col-6">
-        <img id="house-img" class="img-fluid" alt="House Image" />
-      </div>
-      <div class="col-6">
-        <h1 class="mb-4" id="house-name"></h1>
-        <p id="house-desp"></p>
-        <h1 class="mb-4" id="house-price"></h1>
-        <p id="house-space"></p>
-        <p id="house-matr"></p>
-        <p id="house-con"></p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="text-center text-lg-start bg-body-tertiary mt-4">
-    <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom border-top">
-      <div class="me-3 d-none d-lg-block">
-        <span>Get connected with us on social networks :</span>
-      </div>
-      <div>
-        <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
-        <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-        <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
-        <a href="" class="me-4 text-reset"><i class="fab fa-youtube"></i></a>
-      </div>
-    </section>
-
-    <section class="border-bottom">
-      <div class="container text-center text-md-start pt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto px-5 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>OPEX HOME SOLUTIONS
-            </h6>
-            <p>
-              "The Opex Home Solutions provides various home designs along
-              with architecture planning and interior options to plan and
-              build your dream house..."
-            </p>
-          </div>
-
-          <div class="col-md-2 col-lg-2 col-xl-3 ps-5 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">SERVICES</h6>
-            <p>
-              <a href="" class="text-reset">Home Designs</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Interior Designs</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Home Plans</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Home Architecture</a>
-            </p>
-          </div>
-
-          <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">QUICK LINKS</h6>
-            <p>
-              <a href="" class="text-reset">About us</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Contact Us</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Privacy Policy</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">FAQs</a>
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i>Pune Maharashtra</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              contact@opexhomesolutions.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        <div class="col-7 navlinks">
+          <ul class="nav justify-content-center gap-5">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold fs-5"
+                aria-current="page"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-2 mode d-flex justify-content-end align-self-center pe-5"
+        >
+          <div class="toggle-switch">
+            <span class="icon sun"><i class="fas fa-sun"></i></span>
+            <span class="icon moon"><i class="fas fa-moon"></i></span>
           </div>
         </div>
       </div>
-    </section>
+    </navbar>
 
-    <section class="text-center pb-3 pt-3">
-      © 2024 Copyright:
-      <a class="text-reset fw-bold" href="">opexhomesolutions.com</a>
-    </section>
-  </footer>
+    <main class="col-12 container mt-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="sticky-img">
+            <img
+              id="house-img"
+              class="img-fluid mt-3 border border-dark rounded"
+              alt="House Image"
+            />
+            <div class="mt-4 text-center">
+              <button class="btn btn-lg btn-outline-dark me-5">
+                <a
+                  href="architectPlan.html"
+                  class="text-reset text-decoration-none"
+                  >Architecture Plan</a
+                >
+              </button>
+              <button class="btn btn-lg btn-outline-dark">
+                <a href="interior.html" class="text-reset text-decoration-none"
+                  >Interior Option</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p class="mb-4 fs-1 fw-semibold border-bottom" id="house-name"></p>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">Description:</p>
+            <p class="mb-4 house-details fw-light fs-4" id="house-desp"></p>
+          </div>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">Price:</p>
+            <p class="mb-4 house-details fw-light fs-4" id="house-price"></p>
+          </div>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">Area Required:</p>
+            <p class="mb-4 house-details fw-light fs-4" id="house-area"></p>
+          </div>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">
+              Material Required:
+            </p>
+            <p class="mb-4 house-details fw-light fs-4" id="house-material"></p>
+          </div>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">Land Options:</p>
+            <p
+              class="mb-4 house-details fw-light fs-4"
+              id="house-landOptions"
+            ></p>
+          </div>
+          <div class="d-flex border-bottom p-2 my-4">
+            <p class="col-5 mb-4 house-details fw-light fs-4">
+              Contractor/Architect:
+            </p>
+            <p
+              class="mb-4 house-details fw-light fs-4 me-2"
+              id="house-contractor-name"
+            ></p>
+            <p
+              class="mb-4 house-details fw-light fs-4"
+              id="house-contractor-contact"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="houses.js"></script>
-  <script src="script.js"></script>
-</body>
+    <footer class="text-center text-lg-start bg-body-tertiary mt-4">
+      <section
+        class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom border-top"
+      >
+        <div class="me-3 d-none d-lg-block">
+          <span>Get connected with us on social networks :</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="" class="me-4 text-reset"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+          <a href="" class="me-4 text-reset"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
 
+      <section class="border-bottom">
+        <div class="container text-center text-md-start pt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto px-5 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>OPEX HOME SOLUTIONS
+              </h6>
+              <p>
+                "The Opex Home Solutions provides various home designs along
+                with architecture planning and interior options to plan and
+                build your dream house..."
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-3 ps-5 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">SERVICES</h6>
+              <p>
+                <a href="" class="text-reset">Home Designs</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Interior Designs</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Home Plans</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Home Architecture</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">QUICK LINKS</h6>
+              <p>
+                <a href="about.html" class="text-reset">About us</a>
+              </p>
+              <p>
+                <a href="contact.html" class="text-reset">Contact Us</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-1"></i> Pune Maharashtra</p>
+              <p>
+                <i class="fas fa-envelope me-1"></i>
+                contact@opexhomesolutions.com
+              </p>
+              <p><i class="fas fa-phone me-1"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-1"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center pb-3 pt-3">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="">opexhomesolutions.com</a>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="houses.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
