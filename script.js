@@ -70,6 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("house-img").src = house.img;
     document.getElementById("house-img").alt = house.name;
     document.getElementById("house-desp").textContent = house.desp;
+    document.getElementById("house-price").textContent = house.price;
+    document.getElementById("house-space").textContent = house.space;
+    document.getElementById("house-matr").textContent = house.matr;
+    document.getElementById("house-con").textContent = house.con;
+
+
   } else {
     document.getElementById("house-name").textContent = "House not found";
   }
