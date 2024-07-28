@@ -82,7 +82,7 @@ body.dark-mode .toggle-switch .moon {
   width: 10vw;
 }
 .title-text {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 footer,
@@ -104,6 +104,7 @@ main {
 }
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .card img{
   width: 100%;
