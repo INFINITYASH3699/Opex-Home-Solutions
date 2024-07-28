@@ -16,6 +16,8 @@ const houses = [
     img: "https://assets-news.housing.com/news/wp-content/uploads/2021/12/21163255/Types-of-houses-in-India-Bungalow-shutterstock_52187887.jpg",
     name: "Bungalow",
     desp: "Bungalow type of houses have a large veranda, a low-pitched roof and a single-storey or one-and-a-half-storey design.",
+    href:"https://www.forbes.com/home-improvement/living/types-of-house-styles/" 
+    // class : "btn btn-primary"
   },
   {
     id: 4,
