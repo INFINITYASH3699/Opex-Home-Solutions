@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://kit.fontawesome.com/8f96d09b6b.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -109,13 +113,49 @@
       .logo img {
         width: 10vw;
       }
+      .service-box {
+        background-color: #1b293e;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .service-box h3 {
+        margin-bottom: 15px;
+      }
+      .service-box p {
+        font-size: 14px;
+      }
+      .icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      p{
+        font-size: 1rem;
+      }
+      
+      .card img {
+            height: 200px;
+            object-fit: cover; /* Ensures images are properly fitted */
+        }
+        
+        h5{
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
     </style>
   </head>
   <body>
     <navbar class="col-12 nav-bar">
       <div class="row gx-0 nav-tabs pt-4 pb-2">
         <div class="col-3 ps-4">
-          <a class="text-center logo fw-bold fs-4" aria-current="page" href="home.html">
+          <a
+            class="text-center logo fw-bold fs-4"
+            aria-current="page"
+            href="home.html"
+          >
             <img src="./Media/logo.png" class="img-fluid" alt="" />
           </a>
         </div>
@@ -166,7 +206,54 @@
       </div>
     </navbar>
 
-    <main class="col-12 container"></main>
+    <main class="col-12 container">
+      <h1 class="text-center">Our Services</h1>
+      <div class="row gx-5">
+        <div class="col-md-3 card">
+          <img src="https://i.homeadore.com/wp-content/uploads/2021/07/001-split-house-kovac-design-studio-1050x702.jpg" class="card-img-top" alt="home design" />
+          <div class="card-body">
+            <h5>Home Designs</h5>
+            <p class="card-text">
+              Discover diverse home designs tailored to various styles and
+              budgets on our Smart Home Solutions platform. Customize layouts
+              and materials, and get detailed plans with cost estimates. Connect
+              with experienced architects and builders to bring your dream home
+              to life.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 card">
+          <img src="https://d5t3j6u2.rocketcdn.me/wp-content/uploads/2024/05/What-Is-a-Modern-Home-Interior-Design-Idea.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5>Interior Designs</h5>
+            <p class="card-text">
+              Our Smart Home Solutions project offers a range of interior design options, allowing users to personalize their spaces with customizable furniture layouts and decor styles. Choose from modern, traditional, or minimalist themes to match your taste.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 card">
+          <img src="https://www.jkcement.com/wp-content/uploads/2023/08/show-flat-scaled.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5>Home Plans</h5>
+            <p class="card-text">
+              Our Smart Home Solutions project features comprehensive home plans that include detailed floor layouts, area specifications, and estimated construction costs. These plans cater to various architectural styles and budgets, providing a transparent and flexible foundation for your dream home.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 card">
+          <img src="https://pbs.twimg.com/media/FoCcsWaagAEeMXd.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5>Home Architecture</h5>
+            <p class="card-text">
+              Explore a diverse range of architectural styles with our Smart Home Solutions project, offering modern, traditional, and eco-friendly designs. Each style is thoughtfully crafted to meet various aesthetic and functional needs. Our platform provides detailed insights into the architectural features, helping you choose the perfect design for your dream home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="text-center text-lg-start bg-body-tertiary mt-4">
       <section
